@@ -7,7 +7,7 @@ const app = express()
 app.use(express.json())
 app.use(cors({ origin: "https://bulkmail-frontend-chi.vercel.app" }));
 
-mongoose.connect("mongodb+srv://thenvanathi2003:1234@bulkmail.nr7vppb.mongodb.net/paaskey?retryWrites=true&w=majority&appName=BulkMail").then(function(){
+mongoose.connect("mongodb+srv://thenvanathi2003:1234@bulkmail.nr7vppb.mongodb.net/passkey?retryWrites=true&w=majority&appName=BulkMail").then(function(){
     console.log("Connected To Database")
 }).catch(function(err){
     console.error("Database Connection Failed:", err.message)
