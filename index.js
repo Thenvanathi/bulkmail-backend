@@ -5,7 +5,7 @@ const mongoose = require("mongoose")
 const PORT = process.env.PORT || 5000 
 const app = express()
 app.use(express.json())
-app.use(cors({ origin: "http://localhost:5173" }));
+app.use(cors({ origin: "https://bulkmail-frontend-chi.vercel.app" }));
 
 mongoose.connect("mongodb+srv://thenvanathi2003:1234@bulkmail.nr7vppb.mongodb.net/passkey?retryWrites=true&w=majority&appName=BulkMail").then(function(){
     console.log("Connected To Database")
